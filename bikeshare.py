@@ -25,10 +25,8 @@ def get_filters():
            print('please enter valid city name')
         else:
             break
-            
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # TO DO: get user input for month (all, january, february, ... , june) and get user input for day of week (all, monday, tuesday, ... sunday)
     try:
            filter = input('\nwould like to filter the data by month, day ? type "none" for no item filter\n')
            if filter.lower() == 'month':
