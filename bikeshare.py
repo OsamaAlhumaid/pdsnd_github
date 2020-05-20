@@ -135,9 +135,9 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     #ref: https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python
     common_start_end = df.groupby(['Start Station','End Station']).size().idxmax()
+
     print('Most common  Start and End station:', common_start_end)
     
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -153,7 +153,6 @@ def trip_duration_stats(df):
     sum_travel = df['Trip Duration'].sum()
     print('total sum of travel time:', sum_travel)
     
-
 
     # TO DO: display mean travel time
     sum_mean = df['Trip Duration'].mean()
