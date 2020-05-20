@@ -6,7 +6,7 @@ Bikeshare Data analytics
 
 ### Description
 The project consisnt of dataset related to bikeshare in New york, Chicago, Washington.
-We used python and panda libraly to analyes the dataset.
+We used python and panda library  to analyes the dataset.
 
 ### Files used
 chicago.csv
