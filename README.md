@@ -15,5 +15,5 @@ washington.csv
 bikeshare.py
 
 ### Credits
-Thanks for udacity 
+Thanks for udacity and Alrajhi bank for the supporting the program
 
