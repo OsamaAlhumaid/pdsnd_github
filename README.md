@@ -5,7 +5,8 @@ the file created in 5/20/2020
 Bikeshare Data analytics 
 
 ### Description
-The project consisnt of data set related to bikeshare in New york, Chicago, Washington
+The project consisnt of dataset related to bikeshare in New york, Chicago, Washington.
+We used python and panda libraly to analyes the dataset.
 
 ### Files used
 chicago.csv
