@@ -25,10 +25,8 @@ def get_filters():
            print('please enter valid city name')
         else:
             break
-            
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # TO DO: get user input for month (all, january, february, ... , june) and get user input for day of week (all, monday, tuesday, ... sunday)
     try:
            filter = input('\nwould like to filter the data by month, day ? type "none" for no item filter\n')
            if filter.lower() == 'month':
@@ -135,9 +133,9 @@ def station_stats(df):
     # TO DO: display most frequent combination of start station and end station trip
     #ref: https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python
     common_start_end = df.groupby(['Start Station','End Station']).size().idxmax()
+
     print('Most common  Start and End station:', common_start_end)
     
-
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -153,7 +151,6 @@ def trip_duration_stats(df):
     sum_travel = df['Trip Duration'].sum()
     print('total sum of travel time:', sum_travel)
     
-
 
     # TO DO: display mean travel time
     sum_mean = df['Trip Duration'].mean()
@@ -222,7 +219,6 @@ def main():
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
-        #print (df)
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
